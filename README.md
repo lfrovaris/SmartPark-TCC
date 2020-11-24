@@ -23,3 +23,9 @@ Esse projeto é dividito em três componentes. API, Front end (disponibilizaçã
 * Emulador para android (Foi utilizado bluestacks) ou um aparelho Android
 * Android studio (Atualização dos arquivos gradle)
 * jdk-8u261-windows-x64
+
+
+Autor: Leonardo Facchin Rovaris
+Professor orientador: Cristiano Both
+
+Universidade do Vale do Rio do Sinos - UNISINOS 2020/02
