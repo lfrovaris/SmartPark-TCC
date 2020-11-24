@@ -5,9 +5,8 @@ Esse projeto propõem uma aplicação com o intuito de disponibilizar para os us
 
 # Arquitetura
 
-Esse projeto é dividito em três componentes. API do backend, Aplicação móvel, e serviço de comunicação pelo protocolo MQTT. A Arquitetura do sistema é mostrado abaixo:
+Esse projeto é dividito em três componentes. API, Front end, e serviço de comunicação pelo protocolo MQTT. A Arquitetura do sistema é mostrado abaixo:
 
- T
 
 <img src="App/assets/imgArqt1.PNG" alt="Arquitetura do Sistema" width="60%" height="60%"/>
 
@@ -18,7 +17,6 @@ Esse projeto é dividito em três componentes. API do backend, Aplicação móve
 
 ## Aplicação móvel
 <img src="App/assets/fluxarqt2.PNG" alt="Arquitetura Flux" width="60%" height="60%"/>
-
 
 ## Serviço MQTT
 <img src="App/assets/mqttarqt.PNG" alt="Arquitetura Flux" width="60%" height="60%"/>
