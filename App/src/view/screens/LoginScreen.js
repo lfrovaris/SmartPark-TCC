@@ -92,4 +92,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(LoginScreen);
+export default LoginScreen;

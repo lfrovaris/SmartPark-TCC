@@ -12,6 +12,7 @@
     "cross-fetch": "^3.0.6",
     "jsonschema": "^1.2.6",
     "mosca": "^2.8.3",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "utf8": "^3.0.0"
   }
 }

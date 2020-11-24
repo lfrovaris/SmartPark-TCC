@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(TextInput);
+export default TextInput;

@@ -113,4 +113,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default memo(MainScreen);
+export default MainScreen;

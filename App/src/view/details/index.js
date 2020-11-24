@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View } from "react-native";
+import { View, Linking } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { serviceUpdateAccountFavorites } from '../../services/LoginService'
 import { theme } from '../core/theme';
@@ -56,9 +56,12 @@ const Details = (props) => {
           { favorite?star:staro }
           <RequestButtonText>Favoritar</RequestButtonText>
         </RequestButton>
-        <RequestButton style={{ width: '45%',  backgroundColor: theme.colors.primary, height: 70 }} onPress={() => {}}>
+        <RequestButton style={{ width: '45%',  backgroundColor: theme.colors.primary, height: 70 }} 
+        onPress={() => {
+          Linking.openURL(`google.navigation:q=${parkinglot.latitude},${parkinglot.longitude}`)
+        }}>
           {route}
-          <RequestButtonText>Navegar</RequestButtonText>
+          <RequestButtonText >Navegar</RequestButtonText>
         </RequestButton>
       </View>
     </Container>

@@ -14,4 +14,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(Paragraph);
+export default Paragraph;

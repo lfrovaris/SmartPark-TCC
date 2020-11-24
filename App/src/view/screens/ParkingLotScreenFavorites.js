@@ -264,4 +264,4 @@ export const Menu = styled.TouchableOpacity`
     bottom: 1px
 `
 
-export default memo(ParkingLotScreenFavorites);
+export default ParkingLotScreenFavorites;

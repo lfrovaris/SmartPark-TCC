@@ -29,4 +29,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(Background);
+export default Background;

@@ -24,10 +24,11 @@ function getPixelSize(pixels) {
     });
 }
 
-const minhaLocalizacao =  {"latitude": -29.77322769165039, "latitudeDelta": 0.0045, "longitude": -51.14099884033203, "longitudeDelta": 0.0031, "title": "Onde eu estou!"};
+const minhaLocalizacao =  {"latitude": -29.77322769165039, "latitudeDelta": 0.0045, "longitude": -51.14099884033203, "longitudeDelta": 0.0051, "title": "Onde eu estou!"};
 const minharua = "R. José Bonifácio";
 
 const ParkingLotScreen = ({navigation}) =>{ 
+   
     const [region, setRegion] = useState(minhaLocalizacao);
     const [regionSearch, setRegionSearch] = useState(minhaLocalizacao);
     const [destination, setDestination] = useState(null);
@@ -42,37 +43,35 @@ const ParkingLotScreen = ({navigation}) =>{
     }
 
     // useEffect(() => {
-    //   // navigator.geolocation.getCurrentPosition(
-    //   //     async ({ coords: { latitude, longitude } }) => {
-    //   //         const response = await Geocoder.from({ latitude, longitude });
-    //   //         const address = response.results[0].formatted_address;
-    //   //         const location = address.substring(0, address.indexOf(","));
-    //   //         const region = {
-    //   //           latitude,
-    //   //           longitude,
-    //   //           latitudeDelta: 0.0045,
-    //   //           longitudeDelta: 0.0031,
-    //   //           title: 'Onde eu estou!'
-    //   //         };
-    //   //         console.log(location)
+    //   navigator.geolocation.getCurrentPosition(
+    //       async ({ coords: { latitude, longitude } }) => {
+    //           const response = await Geocoder.from({ latitude, longitude });
+    //           const address = response.results[0].formatted_address;
+    //           const location = address.substring(0, address.indexOf(","));
+    //           const region = {
+    //             latitude,
+    //             longitude,
+    //             latitudeDelta: 0.0045,
+    //             longitudeDelta: 0.0031,
+    //             title: 'Onde eu estou!'
+    //           };
+    //           console.log(location)
               
-    //   //         console.log(region)
+    //           console.log(region)
 
-    //   //         setLocation(location);
-    //   //         setRegion(region)
-    //   //         setRegionSearch(region)
-    //   //     }, //sucesso
-    //   //     () => {}, //erro
-    //   //     {
-    //   //         timeout: 2000,
-    //   //         enableHighAccuracy: true,
-    //   //         maximumAge: 1000
-    //   //     }
-    //   // );
-    //   searchParkingLotList();
+    //           setLocation(location);
+    //           setRegion(region)
+    //           setRegionSearch(region)
+    //       }, //sucesso
+    //       () => {}, //erro
+    //       {
+    //           timeout: 2000,
+    //           enableHighAccuracy: true,
+    //           maximumAge: 1000
+    //       }
+    //   );
+    //   // searchParkingLotList();
     // }, []);
-
-    
 
     const handleLocationSelected = (location) => {
         if(location.ocupado)
@@ -107,7 +106,7 @@ const ParkingLotScreen = ({navigation}) =>{
       return (parkinglot && parkinglot.map((location, index) => {
         const { latitude, longitude, ocupado } = location;
         return (
-          <MapView.Marker
+          <Marker
               key={index}
               coordinate={{ latitude, longitude }}
               onPress={() => {
@@ -115,7 +114,7 @@ const ParkingLotScreen = ({navigation}) =>{
               }}
           >
             <Icon name="directions-car" size={15} color={ocupado? "red" : "green"} />
-          </MapView.Marker>)
+          </Marker>)
         }))
     }
 
@@ -174,7 +173,7 @@ const ParkingLotScreen = ({navigation}) =>{
                 </Menu>
                 <Search handleLocationDestinySelected={handleLocationDestinySelected}/>
               </NavBox>
-              <Subtitle />
+              <Subtitle {...{parkinglot:parkinglot, setParkinglot: setParkinglot}} />
             </Fragment>
           )}
         </View>
@@ -264,4 +263,4 @@ export const Menu = styled.TouchableOpacity`
     bottom: 1px
 `
 
-export default memo(ParkingLotScreen);
+export default ParkingLotScreen;
