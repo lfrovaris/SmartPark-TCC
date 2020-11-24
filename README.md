@@ -8,7 +8,7 @@ Esse projeto propõem uma aplicação com o intuito de disponibilizar para os us
 Esse projeto é dividito em três componentes. API, Front end (disponibilização das informações ao usuário), e serviço de comunicação pelo protocolo MQTT. A Arquitetura do sistema é mostrado abaixo:
 
 
-<img src="App/assets/fullarqt.jpg"" alt="Arquitetura do Sistema" width="60%" height="60%"/>
+<img src="App/assets/fullarqt.jpg" alt="Arquitetura do Sistema" width="60%" height="60%"/>
 
 
 ## API backend
