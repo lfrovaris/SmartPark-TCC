@@ -12,7 +12,7 @@ Esse projeto é dividito em três componentes. API, Front end (disponibilizaçã
 
 
 ## API backend
-<img src="App/assets/mvc2.png" alt="Arquitetura Flux" width="60%" height="60%"/>
+<img src="App/assets/mvc2.jpg" alt="Arquitetura Flux" width="60%" height="60%"/>
 
 ## Serviço MQTT
 <img src="App/assets/mqtt.jpg" alt="Arquitetura MQTT" width="60%" height="60%"/>
