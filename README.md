@@ -24,7 +24,7 @@ Esse projeto é dividito em três componentes. API, Front end (disponibilizaçã
 * Android studio (Atualização dos arquivos gradle)
 * jdk-8u261-windows-x64
 
-
+##
 Autor: Leonardo Facchin Rovaris
 Professor orientador: Cristiano Both
 
